@@ -16,10 +16,20 @@ img {
 /* || VARIABLES */
 :root {
   /* COLORS */
-
-  /* GRADIENTS */
+  --bold-purple: #512051;
+  --light-purple:#927B91;
+  --pink :#EE69A4;
+  --white: #FFFFFF;
+  --smoke-white:#F2F2F2;
+  --gray:#979797; 
 
   /* TYPOGRAPHY */
+  --ff:League Spartam, sans-serif;
+  --title: 700 2.5rem/2rem var(--ff);
+  --text: 500 1.1875rem/1.5625rem var(--ff);
+  --div-text :700 1.0625rem var(--ff);
+  --testimonial-text: 400 1.0625rem var(--ff);
+  --testimonial-msg: 500 1.0625rem/1.375rem var(--ff);
 }
 
 /* || UTILITY CLASSES */
@@ -44,12 +54,15 @@ img {
 /* || GENERAL STYLES */
 html {
   scroll-behavior: smooth;
+  font-size: 1rem;
 }
 
 body {
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
+  background-color: var(--smoke-white);
+  background-image: ;
 }
 
 h1,

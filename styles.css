@@ -132,12 +132,11 @@ h1 {
   font: var(--div-text);
   color: var(--bold-purple);
 }
-.main-card__testmonial-wrapper{  
+.main-card__section-testimonial-wrapper{  
   width: 327px;
   height: 776px;
   display: flex;
-  flex-flow: column;
- 
+  flex-flow: column; 
   
 }
 .main-card__testmonial{
@@ -160,6 +159,7 @@ h1 {
   flex-flow: row ;
   gap: 1.4375rem;
   margin-bottom: 1.4375rem;
+ 
   
 }
 .main-card__testimonial-profile__img img {
@@ -195,8 +195,16 @@ h1 {
   
 }
 
-/*TABLET & DESKTOP DESIGN*/ 
-@media  screen and (min-width:1110px) {
+/*TABLET */ 
+@media screen and (min-width:500px){
+  .main-card{   
+    margin: 7.375rem 13.78rem 6.25rem 13.78rem;  
+  }
+}
+
+
+/*DESKTOP DESIGN*/ 
+@media  screen and (min-width:1440px) {
  
   body{
     background-image:
@@ -263,13 +271,40 @@ h1 {
 .main-card__div-img{ 
   padding: 1.2556rem 0rem 1.2581rem 2rem;
 }
-
 .main-card__div-text{
   padding-bottom: 1.25rem;
   padding-top: 1.25rem;
-
+}
+.main-card__section-testimonial-wrapper{  
+  width: 1110px;
+  height: 266px;
+  flex-flow: row; 
+  gap: 30px;   
+}
+.main-card__testmonial{
+  margin-bottom: 0rem; 
+  width: 350px;
+  height: 234px;
+}
+.main-card__testimonial1{
+  margin-top: 0rem;
+}
+.main-card__testimonial2{
+  margin-top: 1rem;
+}
+.main-card__testimonial3{
+  margin-top: 2rem;
 }
 
+.main-card__testimonial-profile__wrapper{
+
+  margin-bottom: 1.9375rem;  
+}
+
+.main-card__testimonial-msg__wrapper{
+  width: 286px;
+  height: 88px;
+}
 
   
 } 

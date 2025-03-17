@@ -1,18 +1,16 @@
-@import url("Your Font of Choice");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-/* || REST */
+/* || RESET */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
 /* || VARIABLES */
 :root {
   /* COLORS */
@@ -21,59 +19,185 @@ img {
   --pink :#EE69A4;
   --white: #FFFFFF;
   --smoke-white:#F2F2F2;
-  --gray:#979797; 
+  --gray:#dddadd; 
 
   /* TYPOGRAPHY */
-  --ff:League Spartam, sans-serif;
+  --ff:League Spartan, sans-serif;
   --title: 700 2.5rem/2rem var(--ff);
   --text: 500 1.1875rem/1.5625rem var(--ff);
   --div-text :700 1.0625rem var(--ff);
   --testimonial-text: 400 1.0625rem var(--ff);
   --testimonial-msg: 500 1.0625rem/1.375rem var(--ff);
 }
-
 /* || UTILITY CLASSES */
 .offscreen {
   position: absolute;
   left: -10000px;
 }
-
 .nowrap {
   white-space: nowrap;
 }
-
 .center {
   text-align: center;
 }
-
 .responsive-image {
   display: none;
 }
-
 /* MOBILE FIRST DESIGN */
 /* || GENERAL STYLES */
 html {
   scroll-behavior: smooth;
   font-size: 1rem;
 }
-
 body {
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
+  place-content:center;
   background-color: var(--smoke-white);
-  background-image: ;
+  background-image:
+  url(./images/bg-pattern-top-mobile.svg),
+  url(./images/bg-pattern-bottom-mobile.svg);
+  background-position:
+  top left,
+  bottom right;
+  background-size: 
+  374px 232px, 
+  1085px 673px;
+  background-repeat:
+  no-repeat, no-repeat;
 }
-
-h1,
-h2 {
+h1 {
   margin: 0;
   padding: 0;
   font-size: inherit;
   font-weight: normal;
+
+}.main-card{
+  height: 1349px;
+  width: 327px;
+  border-color: var(--smoke-white);
+  margin: 5.125rem 1.4375rem 6.1875rem 1.5rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.main-card__section1{
+  width: 327px;
+  height: 219px;
+  display: flex;
+  flex-flow: column;
+  gap: 17px;
+  margin-bottom: 2.4375rem;
+}
+.main-card__section1-title{
+  font: var(--title);
+  color: var(--bold-purple);
+  letter-spacing: -1.43px;
+}
+.main-card__section1-text {
+  font: var(--text);
+  color: var(--light-purple);
+  letter-spacing: -0.63px;
+}
+.main-card__section2-wrapper{
+  width: 327px;
+  height: 266px;
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+  margin-bottom: 3.0625rem;
 }
 
-a:any-link {
-  text-decoration: none;
-  color: black;
+.main-card__div{ 
+  background-color: var(--gray);
+  display: flex;
+  flex-flow: column;
+  gap: 15px;   
+  align-items: center;
+  width: 327px;  
+  border-radius: 8px;
+ 
 }
+.main-card__div-img{
+  display: flex;
+  flex-flow: row;
+  gap: 8.45px;
+  padding: 1rem 6.5906rem 0rem 6.5625rem;
+}
+
+.main-card__div-text{
+  padding-bottom: 15px;
+  font: var(--div-text);
+  color: var(--bold-purple);
+}
+.main-card__testmonial-wrapper{  
+  width: 327px;
+  height: 776px;
+  display: flex;
+  flex-flow: column;
+ 
+  
+}
+.main-card__testmonial{
+  background-color: var(--bold-purple);
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  width: 327px;
+  height: 248px;
+}
+.main-card__testimonial-profile{
+ 
+  display: flex;
+  flex-flow: column;
+  padding: 2.5rem 2rem 2.1875rem 2rem;
+
+
+}
+.main-card__testimonial-profile__wrapper{ 
+  display: flex;
+  flex-flow: row ;
+  gap: 1.4375rem;
+  margin-bottom: 1.4375rem;
+  
+}
+.main-card__testimonial-profile__img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+
+}
+.main-card__testimonial-title__wrapper{
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+}
+.main-card__testmonial-name{
+  font: var(--div-text);
+  color: var(--white);
+  text-transform: capitalize;
+}
+.main-card__testmonial-title{
+  font: var(--testimonial-text);
+  color: var(--pink);
+  text-transform: capitalize;
+}
+.main-card__testimonial-msg__wrapper{
+  width: 263px;
+  height: 110px;
+}
+ .main-card__testmonial-msg{
+  font: var(--testimonial-msg);
+  color: var(--white);
+  align-items: left;
+  letter-spacing: -0.3px;
+  
+
+}
+
+
+
+
+
+
+

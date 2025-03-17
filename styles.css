@@ -24,6 +24,7 @@ img {
   /* TYPOGRAPHY */
   --ff:League Spartan, sans-serif;
   --title: 700 2.5rem/2rem var(--ff);
+  --title-desktop: 700 3.5rem/3rem var(--ff);
   --text: 500 1.1875rem/1.5625rem var(--ff);
   --div-text :700 1.0625rem var(--ff);
   --testimonial-text: 400 1.0625rem var(--ff);
@@ -37,9 +38,7 @@ img {
 .nowrap {
   white-space: nowrap;
 }
-.center {
-  text-align: center;
-}
+
 .responsive-image {
   display: none;
 }
@@ -94,11 +93,13 @@ h1 {
   font: var(--title);
   color: var(--bold-purple);
   letter-spacing: -1.43px;
+  text-align: center;
 }
 .main-card__section1-text {
   font: var(--text);
   color: var(--light-purple);
   letter-spacing: -0.63px;
+  text-align: center;
 }
 .main-card__section2-wrapper{
   width: 327px;
@@ -192,8 +193,86 @@ h1 {
   align-items: left;
   letter-spacing: -0.3px;
   
+}
+
+/*TABLET & DESKTOP DESIGN*/ 
+@media  screen and (min-width:1110px) {
+ 
+  body{
+    background-image:
+  url(./images/bg-pattern-top-desktop.svg),
+  url(./images/bg-pattern-bottom-desktop.svg);
+  background-size: 
+  584px 362px,
+  1085px 673px; 
+ }
+ .main-card{
+  height: 582px;
+  width: 1110px; 
+  margin: 7.375rem 10.3125rem 6.25rem 10.3125rem;
 
 }
+.main-card__section-div{
+  width: 1110px;
+  height: 245px;
+  display: flex;
+  flex-flow: row;
+  gap: 7.8125rem;
+  margin-bottom: 4.4375rem;
+ 
+}
+.main-card__section1{
+  width: 445px;
+  height: 245px; 
+  gap: 16px;
+  align-items: flex-start; 
+}
+.main-card__section1-title{
+  font: var(--title-desktop); 
+  letter-spacing: -2px;
+  text-align: left;  
+}
+.main-card__section1-text {
+  text-align: left;
+}
+
+
+.main-card__section2-wrapper{
+  width: 540px;
+  height: 200px;  
+  margin-bottom: 5.5625rem;
+  padding: 1.6875rem 0rem 1.125rem 0rem;
+}
+.main-card__div{   
+  flex-flow: row;
+  gap: 2.0281rem;   
+  align-items: center;
+  width: 445px; 
+ 
+}
+.main-card__div-section1{
+  margin-left: 0rem ;
+ }
+.main-card__div-section2{
+  margin-left:3rem;
+ }
+
+.main-card__div-section3{
+ margin-left:  5.9375rem;
+}
+.main-card__div-img{ 
+  padding: 1.2556rem 0rem 1.2581rem 2rem;
+}
+
+.main-card__div-text{
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
+
+}
+
+
+  
+} 
 
 
 

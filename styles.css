@@ -210,7 +210,7 @@ h1 {
   height: 582px;
   width: 100%;
   max-width: 1110px; 
-  margin: 7.375rem 10.3125rem 6.25rem 10.3125rem;
+  margin: 7.375rem auto 6.25rem auto;
 
 }
 .main-card__section-div{

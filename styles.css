@@ -194,9 +194,56 @@ h1 {
   letter-spacing: -0.3px;
   
 }
+/*TABLET DESIGN*/
+@media screen and (min-width:600px) and (max-width:1023px) and (min-height: 1200px){
+  body{
+    background-image:
+  url(./images/bg-pattern-top-desktop.svg),
+  url(./images/bg-pattern-bottom-desktop.svg);
+  background-size: 
+  584px 362px,
+  1085px 673px; 
+ }
+  .main-card{
+  height: 1349px;
+  width: 100%;
+  max-width: 405px; 
+  margin: 5.125rem 6.375rem;
+
+}
+.main-card__section-div{
+  width:100%;
+  max-width: 362px;
+  height: 489px;
+  display: flex;
+  flex-flow: colum;
+  gap: 2.75rem;
+  margin-bottom: 2.562rem;
+ 
+}
+.main-card__section1{
+  width:100%;
+  max-width: 351px;
+  height: 179px; 
+  gap: 16px;
+  align-items: center; 
+}
+  .main-card__section1-title{
+  font: var(--title-desktop); 
+  letter-spacing: -2px;
+  text-align: center;  
+}
+.main-card__section1-text {
+  text-align: center;
+}
+
+  
+  
+}
+  
 
 /*DESKTOP DESIGN*/ 
-@media  screen and (min-width:768px) {
+@media  screen and (min-width:1024px) {
  
   body{
     background-image:

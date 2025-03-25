@@ -195,50 +195,81 @@ h1 {
   
 }
 /*TABLET DESIGN*/
-@media screen and (min-width:600px) and (max-width:1023px) and (min-height: 1200px){
-  body{
+@media screen and (min-width:600px) and (max-width:1023px) {
+  body {
     background-image:
-  url(./images/bg-pattern-top-desktop.svg),
-  url(./images/bg-pattern-bottom-desktop.svg);
-  background-size: 
-  584px 362px,
-  1085px 673px; 
- }
-  .main-card{
-  height: 1349px;
-  width: 100%;
-  max-width: 405px; 
-  margin: 5.125rem 6.375rem;
+      url(./images/bg-pattern-top-desktop.svg),
+      url(./images/bg-pattern-bottom-desktop.svg);
+    background-size: 
+      584px 362px,
+      1085px 673px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
 
-}
-.main-card__section-div{
-  width:100%;
-  max-width: 362px;
-  height: 489px;
-  display: flex;
-  flex-flow: colum;
-  gap: 2.75rem;
-  margin-bottom: 2.562rem;
- 
-}
-.main-card__section1{
-  width:100%;
-  max-width: 351px;
-  height: 179px; 
-  gap: 16px;
-  align-items: center; 
-}
-  .main-card__section1-title{
-  font: var(--title-desktop); 
-  letter-spacing: -2px;
-  text-align: center;  
-}
-.main-card__section1-text {
-  text-align: center;
-}
+  .main-card {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 
-  
-  
+  .main-card__section-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .main-card__section1 {
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+  }
+
+  .main-card__section1-title {
+    font: var(--title-desktop);
+    letter-spacing: -2px;
+  }
+
+  .main-card__section2-wrapper {
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-card__div {
+    width: 100%;
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .main-card__section-testimonial-wrapper {
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-card__testmonial {
+    width: 100%;
+    max-width: 350px;
+  }
 }
   
 

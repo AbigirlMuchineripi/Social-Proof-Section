@@ -1,7 +1,7 @@
 
 let  i = 0;
 const target = 10000;
-const increment = 500;
+const increment = 250;
 const h1 = document.getElementById('main-card__section1-title');
 
 function updateCount() {

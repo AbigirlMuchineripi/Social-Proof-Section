@@ -195,16 +195,9 @@ h1 {
   
 }
 
-/*TABLET */ 
-@media screen and (min-width:500px){
-  .main-card{   
-    margin: 7.375rem 13.78rem 6.25rem 13.78rem;  
-  }
-}
-
 
 /*DESKTOP DESIGN*/ 
-@media  screen and (min-width:1440px) {
+@media  screen and (min-width:768px) {
  
   body{
     background-image:

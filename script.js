@@ -8,7 +8,7 @@ function updateCount() {
     if (i <= target) {
         h1.textContent = `${i}+ satisfied customers`;
         i += increment;
-        setTimeout(updateCount, 100); 
+        setTimeout(updateCount, 30); 
     }
 }
 

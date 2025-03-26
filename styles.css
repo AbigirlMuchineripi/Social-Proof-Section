@@ -208,12 +208,6 @@ h1 {
     align-items: center;
     padding: 2rem;
   }
-
-<<<<<<< HEAD
-
-/*DESKTOP DESIGN*/ 
-@media  screen and (min-width:768px) {
-=======
   .main-card {
     width: 100%;
     max-width: 768px;
@@ -276,11 +270,13 @@ h1 {
     max-width: 350px;
   }
 }
+
+
+
   
 
 /*DESKTOP DESIGN*/ 
 @media  screen and (min-width:1024px) {
->>>>>>> 36c33160aa3fb6c0b07322c52f36fbd91acc019d
  
   body{
     background-image:
